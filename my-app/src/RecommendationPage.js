@@ -13,6 +13,7 @@ const RecommendationPage = () => {
       time: '9:00 AM - 10:30 AM',
       days: ['Monday', 'Wednesday'],
     },
+    
     {
       number: 'CSE 303',
       name: 'Operating Systems',
