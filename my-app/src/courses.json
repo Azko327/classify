@@ -7,7 +7,9 @@
       "area": "Software Engineering",
       "difficulty": "Medium",
       "credits": 3,
-      "description": "An introduction to fundamental concepts in computer science, covering programming, algorithms, problem-solving, and the basics of data structures."
+      "description": "An introduction to fundamental concepts in computer science, covering programming, algorithms, problem-solving, and the basics of data structures.",
+      "days": ["Monday", "Wednesday", "Friday"],
+      "time": "10:00 AM - 11:00 AM"
     },
     {
       "number": "CSE 202",
@@ -17,7 +19,9 @@
       "area": "Software Engineering",
       "difficulty": "Medium",
       "credits": 4,
-      "description": "This course covers essential data structures such as linked lists, stacks, queues, trees, and graphs, as well as their implementations and applications in various algorithms."
+      "description": "This course covers essential data structures such as linked lists, stacks, queues, trees, and graphs, as well as their implementations and applications in various algorithms.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "9:30 AM - 11:00 AM"
     },
     {
       "number": "CSE 303",
@@ -27,7 +31,9 @@
       "area": "Systems",
       "difficulty": "Hard",
       "credits": 3,
-      "description": "A comprehensive study of operating systems concepts, including process management, memory management, file systems, and concurrency in modern operating systems."
+      "description": "A comprehensive study of operating systems concepts, including process management, memory management, file systems, and concurrency in modern operating systems.",
+      "days": ["Monday", "Wednesday"],
+      "time": "1:00 PM - 2:30 PM"
     },
     {
       "number": "CSE 340",
@@ -37,7 +43,9 @@
       "area": "Machine Learning",
       "difficulty": "Hard",
       "credits": 3,
-      "description": "An introductory course to machine learning, covering supervised learning, unsupervised learning, neural networks, and key algorithms for classification and clustering."
+      "description": "An introductory course to machine learning, covering supervised learning, unsupervised learning, neural networks, and key algorithms for classification and clustering.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "11:00 AM - 12:30 PM"
     },
     {
       "number": "MATH 101",
@@ -47,7 +55,9 @@
       "area": "Mathematics",
       "difficulty": "Medium",
       "credits": 4,
-      "description": "An introduction to differential and integral calculus, focusing on limits, continuity, derivatives, integrals, and their applications in real-world problems."
+      "description": "An introduction to differential and integral calculus, focusing on limits, continuity, derivatives, integrals, and their applications in real-world problems.",
+      "days": ["Monday", "Wednesday", "Friday"],
+      "time": "8:00 AM - 9:00 AM"
     },
     {
       "number": "MATH 102",
@@ -57,7 +67,9 @@
       "area": "Mathematics",
       "difficulty": "Medium",
       "credits": 4,
-      "description": "A continuation of Calculus I, covering advanced integration techniques, sequences and series, parametric equations, and polar coordinates."
+      "description": "A continuation of Calculus I, covering advanced integration techniques, sequences and series, parametric equations, and polar coordinates.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "9:00 AM - 10:30 AM"
     },
     {
       "number": "PHY 101",
@@ -67,7 +79,9 @@
       "area": "Natural Sciences",
       "difficulty": "Medium",
       "credits": 3,
-      "description": "This course introduces the fundamentals of physics, covering classical mechanics, thermodynamics, electromagnetism, and optics."
+      "description": "This course introduces the fundamentals of physics, covering classical mechanics, thermodynamics, electromagnetism, and optics.",
+      "days": ["Monday", "Wednesday", "Friday"],
+      "time": "11:00 AM - 12:00 PM"
     },
     {
       "number": "HUM 101",
@@ -77,7 +91,9 @@
       "area": "Humanities",
       "difficulty": "Easy",
       "credits": 2,
-      "description": "An overview of major philosophical ideas, thinkers, and debates from ancient to modern times, exploring topics such as ethics, metaphysics, and political philosophy."
+      "description": "An overview of major philosophical ideas, thinkers, and debates from ancient to modern times, exploring topics such as ethics, metaphysics, and political philosophy.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "2:00 PM - 3:00 PM"
     },
     {
       "number": "CSE 220",
@@ -87,7 +103,9 @@
       "area": "Software Engineering",
       "difficulty": "Hard",
       "credits": 3,
-      "description": "An in-depth look at algorithm design and analysis, including sorting, searching, dynamic programming, and an introduction to computational complexity theory."
+      "description": "An in-depth look at algorithm design and analysis, including sorting, searching, dynamic programming, and an introduction to computational complexity theory.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "1:00 PM - 2:30 PM"
     },
     {
       "number": "CSE 230",
@@ -97,7 +115,9 @@
       "area": "Networking",
       "difficulty": "Medium",
       "credits": 3,
-      "description": "This course covers the principles and technologies of computer networks, focusing on the Internet protocol suite (TCP/IP), network architecture, and data transmission."
+      "description": "This course covers the principles and technologies of computer networks, focusing on the Internet protocol suite (TCP/IP), network architecture, and data transmission.",
+      "days": ["Monday", "Wednesday"],
+      "time": "3:00 PM - 4:30 PM"
     },
     {
       "number": "CSE 250",
@@ -107,7 +127,9 @@
       "area": "Database Management",
       "difficulty": "Medium",
       "credits": 3,
-      "description": "An introduction to database design, relational databases, SQL, normalization, and indexing, with a focus on building efficient database applications."
+      "description": "An introduction to database design, relational databases, SQL, normalization, and indexing, with a focus on building efficient database applications.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "11:00 AM - 12:30 PM"
     },
     {
       "number": "CSE 260",
@@ -117,7 +139,9 @@
       "area": "Cybersecurity",
       "difficulty": "Medium",
       "credits": 3,
-      "description": "A foundational course in cybersecurity, covering topics such as encryption, network security, authentication, and risk management."
+      "description": "A foundational course in cybersecurity, covering topics such as encryption, network security, authentication, and risk management.",
+      "days": ["Monday", "Wednesday"],
+      "time": "9:00 AM - 10:30 AM"
     },
     {
       "number": "BIO 110",
@@ -127,7 +151,9 @@
       "area": "Natural Sciences",
       "difficulty": "Medium",
       "credits": 4,
-      "description": "An overview of biological concepts, including cell biology, genetics, evolution, and ecosystems, with a focus on understanding the diversity of life."
+      "description": "An overview of biological concepts, including cell biology, genetics, evolution, and ecosystems, with a focus on understanding the diversity of life.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "8:00 AM - 9:30 AM"
     },
     {
       "number": "CHEM 101",
@@ -137,7 +163,9 @@
       "area": "Natural Sciences",
       "difficulty": "Medium",
       "credits": 4,
-      "description": "A comprehensive introduction to chemistry, covering atomic structure, chemical bonding, thermodynamics, and the properties of gases, liquids, and solids."
+      "description": "A comprehensive introduction to chemistry, covering atomic structure, chemical bonding, thermodynamics, and the properties of gases, liquids, and solids.",
+      "days": ["Monday", "Wednesday", "Friday"],
+      "time": "2:00 PM - 3:00 PM"
     },
     {
       "number": "CSE 370",
@@ -147,7 +175,9 @@
       "area": "Artificial Intelligence",
       "difficulty": "Hard",
       "credits": 3,
-      "description": "This course provides an introduction to artificial intelligence, covering search algorithms, game theory, reasoning, and machine learning basics."
+      "description": "This course provides an introduction to artificial intelligence, covering search algorithms, game theory, reasoning, and machine learning basics.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "10:00 AM - 11:30 AM"
     },
     {
       "number": "CSE 450",
@@ -157,7 +187,9 @@
       "area": "Machine Learning",
       "difficulty": "Hard",
       "credits": 3,
-      "description": "An advanced course in machine learning, covering deep learning, reinforcement learning, and neural network architectures for various applications."
+      "description": "An advanced course in machine learning, covering deep learning, reinforcement learning, and neural network architectures for various applications.",
+      "days": ["Monday", "Wednesday"],
+      "time": "11:30 AM - 1:00 PM"
     },
     {
       "number": "CSE 460",
@@ -167,7 +199,9 @@
       "area": "Blockchain",
       "difficulty": "Hard",
       "credits": 3,
-      "description": "An introduction to blockchain technology, covering the principles of distributed ledger systems, consensus mechanisms, smart contracts, and their applications."
+      "description": "An introduction to blockchain technology, covering the principles of distributed ledger systems, consensus mechanisms, smart contracts, and their applications.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "2:00 PM - 3:30 PM"
     },
     {
       "number": "ENG 101",
@@ -177,7 +211,9 @@
       "area": "Humanities",
       "difficulty": "Easy",
       "credits": 2,
-      "description": "This course focuses on developing academic writing skills, including argumentative essays, research papers, and critical reading."
+      "description": "This course focuses on developing academic writing skills, including argumentative essays, research papers, and critical reading.",
+      "days": ["Tuesday", "Thursday"],
+      "time": "3:30 PM - 4:30 PM"
     },
     {
       "number": "CSE 480",
@@ -187,7 +223,9 @@
       "area": "Software Engineering",
       "difficulty": "Hard",
       "credits": 3,
-      "description": "An advanced course in software engineering, covering topics such as design patterns, software architecture, testing, and agile methodologies."
+      "description": "An advanced course in software engineering, covering topics such as design patterns, software architecture, testing, and agile methodologies.",
+      "days": ["Monday", "Wednesday"],
+      "time": "4:00 PM - 5:30 PM"
     },
     {
       "number": "CSE 490",
@@ -197,7 +235,9 @@
       "area": "Capstone",
       "difficulty": "Hard",
       "credits": 3,
-      "description": "A capstone project course where students work in teams to design and implement a large-scale software system, applying principles learned throughout the curriculum."
+      "description": "A capstone project course where students work in teams to design and implement a large-scale software system, applying principles learned throughout the curriculum.",
+      "days": ["Friday"],
+      "time": "9:00 AM - 12:00 PM"
     }
   ]
   
