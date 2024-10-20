@@ -8,6 +8,23 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import './RecommendationPage.css';  // Import the CSS file
 import logo from './assets/classify-logo.png';
 
+const externalCoursesData = [
+    // Add your JSON external courses data here
+    // Example:
+    {
+      platform: "Coursera",
+      courseName: "Deep Learning Specialization",
+      url: "https://www.coursera.org/specializations/deep-learning"
+    },
+    {
+      platform: "Udemy",
+      courseName: "Complete Machine Learning & Data Science Bootcamp",
+      url: "https://www.udemy.com/course/complete-machine-learning-and-data-science-bootcamp/"
+    }
+    // Add all the other courses here...
+  ];
+  
+
 const RecommendationPage = () => {
   const location = useLocation();
   const { recommendedCourses } = location.state || { recommendedCourses: [] };  // Recommended courses from form submission
@@ -97,7 +114,7 @@ const RecommendationPage = () => {
     </Navbar>
 
       <Row className="mt-4">
-      <Col md={7}>
+      <Col md={8}>
         <h4>Your schedule</h4>
         <div className="calendar-container">
             <Calendar
@@ -116,7 +133,7 @@ const RecommendationPage = () => {
             />
           </div>
       </Col>
-        <Col md={5}>
+        <Col md={4}>
           <h5>Recommended Courses</h5>
           <div className="course-table-container"> {/* Apply the new container class */}
             {recommendedCourses.map((course) => (
@@ -137,11 +154,36 @@ const RecommendationPage = () => {
              ))}
             </div>
         </Col>
+        </Row>
+
+
+      {/* External Courses Section */}
+      <Row className="mt-3 justify-content-center">
+        <Col md={8}>
+          <h5>External Courses</h5>
+          <div className="external-course-table-container">
+            {externalCoursesData.map((course) => (
+              <div className="external-course-container" key={course.courseName}>
+                <div className="external-course-info">
+                  <div className="external-course-name">{course.courseName}</div>
+                  <a
+                    href={course.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="external-course-link"
+                  >
+                    Get the link
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Col>
       </Row>
 
       {/* Section for adding user course */}
       <Row className="mt-4">
-        <h4>Add your own course</h4>
+        <h5>Add your own course</h5>
         <Form onSubmit={handleSearch}>
           <Form.Control
             type="text"

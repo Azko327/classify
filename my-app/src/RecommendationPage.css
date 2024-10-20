@@ -27,7 +27,6 @@
   .course-table-container {
     max-width: 1000px; /* Increase the width of the course table */
     margin: 0 auto;    /* Center the table horizontally */
-    padding: 20px;     /* Add padding for spacing around the table */
   }  
 
   /* Ensure uniform box sizes in each column */
@@ -38,7 +37,7 @@
     margin-bottom: 10px;
     border-radius: 8px;
     background-color: #f3e8fc; /* Light purple background */
-    font-size: 0.875rem; /* Set a smaller font size (14px) */
+    font-size: 0.75rem; /* Set a smaller font size (14px) */
   }
   
   .course-info {
@@ -89,12 +88,20 @@
     cursor: pointer;
     color: purple;
   }
-
-  /* Calendar Styling */
-.calendar-container {
-    max-width: 800px;  /* Set a max-width to make the calendar narrower */
-    margin: 0 auto;    /* Center the calendar horizontally */
-    padding: 20px;     /* Add padding to ensure space around the calendar */
+/* Adjustments for layout */
+  .calendar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Bring the calendar and courses closer */
+  .mt-4 {
+    margin-top: 20px !important;
+  }
+  
+  .mt-3 {
+    margin-top: 15px !important;
   }
   
   /* Event styling in the calendar */
@@ -102,4 +109,13 @@
     background-color: purple;  /* Purple background for events */
     color: white;              /* White text for events */
   }
+
+  /* External Course Table Styling */
+.external-course-table-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
   
