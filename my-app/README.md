@@ -1,70 +1,96 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Course Recommendation System
 
-## Available Scripts
+This is a web-based application that provides personalized **course recommendations** and suggests **external courses** from platforms like Coursera, Udemy, and GitHub. Users can view their recommended courses, check schedules, and access external course links directly.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Recommended Courses**: Displays personalized course recommendations including course number, name, difficulty, description, schedule, and credits.
+- **External Courses**: Provides external course recommendations from platforms such as Coursera, Udemy, and GitHub, with a "Get the link" button to access them.
+- **Dynamic Schedule**: Shows your course schedule and allows users to view the recommended courses.
+- **Error Handling**: Proper error handling is implemented to catch and display issues during the data fetching process.
+  
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/course-recommendation-system.git
+   cd course-recommendation-system
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**:
+   Ensure you have [Node.js](https://nodejs.org/) installed, then run:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. **Run the application**:
+   To start the development server, run:
+   ```bash
+   npm start
+   ```
+   This will launch the app in development mode on `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once the application is running:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. View the **recommended courses** based on your profile. The page will show details such as the course name, description, and difficulty.
+2. See your **total credits** for the recommended courses.
+3. Browse through **external course recommendations** from different platforms, and use the "Get the link" button to access the course directly.
+4. You can view your **course schedule** and dynamically add courses to it.
 
-### `npm run eject`
+### Error Handling
+- If there are any issues with fetching data, an error message will be displayed on the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project is built using the following technologies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React**: Frontend framework for building the UI.
+- **React Bootstrap**: UI component library to make the design responsive and modern.
+- **React Big Calendar**: Used to display the user’s course schedule dynamically.
+- **ESLint**: Linting to maintain code quality.
+- **Node.js**: Backend (if applicable) or just the environment for running the app locally.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+```
+course-recommendation-system/
+│
+├── public/                  # Public assets like index.html, favicon, etc.
+│
+├── src/                     # Main source code
+│   ├── components/          # React components
+│   ├── pages/               # Page components like RecommendationPage.js
+│   ├── styles/              # CSS/SCSS styles
+│   ├── App.js               # Main app component
+│   ├── index.js             # Entry point for the React app
+│   ├── SharedStyles.css     # Shared styles for components
+│   └── RecommendationPage.js # Main course recommendation logic
+│
+├── package.json             # Dependencies and scripts
+└── README.md                # Project documentation
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/your-feature`)
+3. **Commit your changes** (`git commit -am 'Add some feature'`)
+4. **Push to the branch** (`git push origin feature/your-feature`)
+5. **Create a Pull Request**
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
