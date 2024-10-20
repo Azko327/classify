@@ -7,31 +7,32 @@ const UserForm = () => {
   const [major, setMajor] = useState('');
   const [academicInterests, setAcademicInterests] = useState('');
   const [coursesTaken, setCoursesTaken] = useState('');
+  const [recommendations, setRecommendations] = useState(null); // For displaying recommended courses
 
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     const userData = {
       major,
-      academicInterests: academicInterests.split(',').map(item => item.trim()),
-      pastClasses: coursesTaken.split(',').map(item => item.trim()), // Manually entered courses taken
+      coursesTaken: coursesTaken.split(',').map(item => item.trim()), // Manually entered courses taken
+      studentInterests: academicInterests, // Send academic interests to the backend for analysis
     };
-
-    // Store the data in Firebase
+  
     try {
-      const userId = 'userID123'; // Replace with actual user ID or dynamic value
-      await setDoc(doc(db, 'users', userId), userData);
-      console.log('Data successfully saved to Firebase');
+      // Use your API Gateway URL here
+      const response = await axios.post('https://ysluz2e9rj.execute-api.us-east-1.amazonaws.com/recommendation', userData);
+      setRecommendations(response.data.recommendedCourses); // Update state with recommendations from backend
     } catch (error) {
-      console.error('Error saving data to Firebase:', error);
+      console.error('Error fetching course recommendations:', error);
     }
-
+  
     // Reset the form
     setMajor('');
     setAcademicInterests('');
     setCoursesTaken('');
   };
+  
 
   return (
     <Form onSubmit={handleSubmit}>
