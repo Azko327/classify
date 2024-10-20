@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Form, Button, Row, Col } from 'react-bootstrap';
 import { db } from './firebaseConfig'; // Import Firestore config
 import { doc, setDoc } from 'firebase/firestore'; // Firestore functions
 
@@ -33,39 +34,60 @@ const UserForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Major:</label>
-        <input
-          type="text"
-          value={major}
-          onChange={(e) => setMajor(e.target.value)}
-          required
-        />
-      </div>
+    <Form onSubmit={handleSubmit}>
+      <Row className="mb-3">
+        <Form.Group as={Col}>
+          <Form.Label>Major #1</Form.Label>
+          <Form.Control
+            type="text"
+            value={major}
+            onChange={(e) => setMajor(e.target.value)}
+            required
+            placeholder="i.e. Computer Science"
+          />
+        </Form.Group>
 
-      <div>
-        <label>Courses Taken (comma separated):</label>
-        <input
+        <Form.Group as={Col}>
+          <Form.Label>Major #2</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Optional"
+          />
+        </Form.Group>
+      </Row>
+
+      <Form.Group className="mb-3">
+        <Form.Label>List all your past and current classes</Form.Label>
+        <Form.Control
           type="text"
           value={coursesTaken}
           onChange={(e) => setCoursesTaken(e.target.value)}
           required
+          placeholder="i.e. CSE 202, MATH 023"
         />
-      </div>
+      </Form.Group>
 
-      <div>
-        <label>Career/Academic Interests (comma separated):</label>
-        <input
+      <Form.Group className="mb-3">
+        <Form.Label>OR drop in your most current transcript</Form.Label>
+        <Form.Control type="file" />
+      </Form.Group>
+
+      <Form.Group className="mb-3">
+        <Form.Label>Career/Academic Interests</Form.Label>
+        <Form.Control
           type="text"
           value={academicInterests}
           onChange={(e) => setAcademicInterests(e.target.value)}
           required
+          placeholder="i.e. Machine Learning, Backend Development"
         />
-      </div>
+      </Form.Group>
+      
+      <Button variant="primary" type="submit">
+        Get Recommendations
+      </Button>
 
-      <button type="submit">Submit</button>
-    </form>
+    </Form>
   );
 };
 

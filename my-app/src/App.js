@@ -1,5 +1,6 @@
 // src/App.js
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import UserForm from './UserForm'; // Import the form
 
