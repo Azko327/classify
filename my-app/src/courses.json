@@ -713,7 +713,7 @@
         "majorRequired": false,
         "generalRequirement": true,
         "area": "Honors",
-        "difficulty": "Varies",
+        "difficulty": "Medium",
         "credits": 1,
         "description": "An intensive study culminating in a project report.",
         "days": ["Friday"],
@@ -1049,8 +1049,8 @@
         "majorRequired": false,
         "generalRequirement": true,
         "area": "Mathematics",
-        "difficulty": "Varies",
-        "credits": 1-3,
+        "difficulty": "Medium",
+        "credits": 3,
         "description": "Exploration of selected topics in mathematics. Content varies by semester.",
         "days": ["Friday"],
         "time": "10:00 AM - 12:00 PM"
@@ -1145,8 +1145,8 @@
         "majorRequired": false,
         "generalRequirement": true,
         "area": "Language",
-        "difficulty": "Varies",
-        "credits": 1-4,
+        "difficulty": "Medium",
+        "credits": 4,
         "description": "Materials not covered in regular courses.",
         "days": ["Friday"],
         "time": "10:00 AM - 12:00 PM"
@@ -1158,10 +1158,10 @@
         "generalRequirement": true,
         "area": "Language",
         "difficulty": "Easy",
-        "credits": 0-8,
+        "credits": 3,
         "description": "Beginning level of Spanish language, literature, or culture courses taught abroad.",
         "days": [],
-        "time": ""
+        "time": "1:00 PM - 2:30 PM"
     },
     {
         "number": "SPAN 141",
@@ -1217,11 +1217,11 @@
         "majorRequired": false,
         "generalRequirement": true,
         "area": "Language",
-        "difficulty": "Varies",
-        "credits": 1-4,
+        "difficulty": "Medium",
+        "credits": 4,
         "description": "Topics related to Spanish and Hispanic Studies culture or language not covered in regular courses.",
         "days": [],
-        "time": ""
+        "time": "1:00 PM - 2:30 PM"
     },
     {
         "number": "SPAN 191",
@@ -1229,8 +1229,8 @@
         "majorRequired": false,
         "generalRequirement": true,
         "area": "Language",
-        "difficulty": "Varies",
-        "credits": 1-4,
+        "difficulty": "Medium",
+        "credits": 4,
         "description": "Materials not covered in regular courses.",
         "days": ["Friday"],
         "time": "10:00 AM - 12:00 PM"
@@ -1242,10 +1242,10 @@
         "generalRequirement": true,
         "area": "Language",
         "difficulty": "Easy",
-        "credits": 0-8,
+        "credits": 2,
         "description": "Intermediate level of Spanish language, literature, or culture courses taught abroad.",
         "days": [],
-        "time": ""
+        "time": "1:00 PM - 2:30 PM"
     },
     {
         "number": "SPAN 211",

@@ -124,5 +124,12 @@
         "area": "Cloud Computing",
         "description": "A curated list of cloud computing tutorials, courses, and tools.",
         "url": "https://github.com/cloud-computing-resources"
+    },
+    {
+        "platform": "Amazon",
+        "courseName": "Cloud Computing Training & Classes - Training and Certification",
+        "area": "Cloud Computing",
+        "description": "Cloud skills and credentials that fuel innovation, accelerate impact, and change lives.",
+        "url": "https://aws.amazon.com/training/?nc1=h_ls"
     }
 ]
