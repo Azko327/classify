@@ -8,6 +8,7 @@ const UserForm = () => {
   const [minCredits, setMinCredits] = useState(''); // Allow empty, default validation will apply
   const [maxCredits, setMaxCredits] = useState(''); // Allow empty, default validation will apply
   const [recommendations, setRecommendations] = useState(null); // For displaying recommended courses
+  const [externalCourses, setExternalCourses] = useState(null); // For displaying external courses
   const [errorMessage, setErrorMessage] = useState(''); // To show any errors
 
   // Handle form submission
@@ -28,6 +29,7 @@ const UserForm = () => {
     try {
       const response = await axios.post('https://ysluz2e9rj.execute-api.us-east-1.amazonaws.com/recommendation', userData);
       setRecommendations(response.data.recommendedCourses); // Update state with recommendations from backend
+      setExternalCourses(response.data.externalCourseRecommendations || []); // Update state with external courses if available
     } catch (error) {
       if (error.response && error.response.data) {
         // Display the error message from the backend
@@ -117,6 +119,23 @@ const UserForm = () => {
             ))}
           </ul>
           <h3>Total Credits: {recommendations.reduce((sum, course) => sum + course.credits, 0)}</h3>
+        </div>
+      )}
+
+      {externalCourses && externalCourses.length > 0 && (
+        <div>
+          <h2>External Course Recommendations</h2>
+          <ul>
+            {externalCourses.map((course, index) => (
+              <li key={index}>
+                {/* Display external course details */}
+                {course.courseName} - {course.platform}
+                <p>{course.description}</p>
+                <p><strong>Area:</strong> {course.area}</p>
+                <p><a href={course.url} target="_blank" rel="noopener noreferrer">Link to Course</a></p>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

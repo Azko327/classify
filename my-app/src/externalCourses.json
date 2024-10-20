@@ -1,0 +1,128 @@
+[
+    {
+        "platform": "Coursera",
+        "courseName": "Deep Learning Specialization",
+        "area": "Machine Learning",
+        "description": "A comprehensive course covering deep learning techniques, neural networks, and implementation using TensorFlow and Keras.",
+        "url": "https://www.coursera.org/specializations/deep-learning"
+    },
+    {
+        "platform": "Udemy",
+        "courseName": "Complete Machine Learning & Data Science Bootcamp",
+        "area": "Machine Learning",
+        "description": "Learn Machine Learning and Data Science from scratch, build real-world projects and prepare for interviews.",
+        "url": "https://www.udemy.com/course/complete-machine-learning-and-data-science-bootcamp/"
+    },
+    {
+        "platform": "GitHub",
+        "courseName": "Practical Machine Learning Projects",
+        "area": "Machine Learning",
+        "description": "A GitHub repository with practical machine learning projects to practice real-world skills.",
+        "url": "https://github.com/ageron/handson-ml"
+    },
+    {
+        "platform": "Coursera",
+        "courseName": "Introduction to Human Geography",
+        "area": "Geography",
+        "description": "Explore the relationship between humans and their environment, including cultural and physical landscapes.",
+        "url": "https://www.coursera.org/learn/human-geography"
+    },
+    {
+        "platform": "Udemy",
+        "courseName": "Fundamentals of Geographic Information Systems (GIS)",
+        "area": "Geography",
+        "description": "Learn how to use GIS technology for mapping and analyzing geographic data.",
+        "url": "https://www.udemy.com/course/gis-fundamentals/"
+    },
+    {
+        "platform": "GitHub",
+        "courseName": "Geography of the World",
+        "area": "Geography",
+        "description": "An interactive course that covers geographical features, countries, and cultures around the world.",
+        "url": "https://github.com/geo/world-geography"
+    },
+    {
+        "platform": "Coursera",
+        "courseName": "AI for Everyone",
+        "area": "Artificial Intelligence",
+        "description": "An introduction to AI and its applications, suitable for anyone looking to understand the impact of AI.",
+        "url": "https://www.coursera.org/learn/ai-for-everyone"
+    },
+    {
+        "platform": "Udemy",
+        "courseName": "Natural Language Processing with Python",
+        "area": "Artificial Intelligence",
+        "description": "Master NLP using Python libraries such as NLTK and spaCy, and work on real-world projects.",
+        "url": "https://www.udemy.com/course/natural-language-processing-with-python/"
+    },
+    {
+        "platform": "GitHub",
+        "courseName": "AI Algorithms Implementation",
+        "area": "Artificial Intelligence",
+        "description": "A collection of AI algorithms implemented in Python, with explanations and code samples.",
+        "url": "https://github.com/aimacode/aima-python"
+    },
+    {
+        "platform": "Coursera",
+        "courseName": "Cybersecurity Specialization",
+        "area": "Cybersecurity",
+        "description": "Learn the foundations of cybersecurity, including cryptography, network security, and risk management.",
+        "url": "https://www.coursera.org/specializations/cyber-security"
+    },
+    {
+        "platform": "Udemy",
+        "courseName": "Ethical Hacking for Beginners",
+        "area": "Cybersecurity",
+        "description": "Learn the fundamentals of ethical hacking and network security.",
+        "url": "https://www.udemy.com/course/ethical-hacking-beginner/"
+    },
+    {
+        "platform": "GitHub",
+        "courseName": "Awesome Cybersecurity Learning Resources",
+        "area": "Cybersecurity",
+        "description": "A curated list of awesome cybersecurity resources and learning platforms.",
+        "url": "https://github.com/fabacab/awesome-cybersecurity-learning"
+    },
+    {
+        "platform": "Coursera",
+        "courseName": "Algorithms Specialization",
+        "area": "Algorithms",
+        "description": "Learn the fundamental concepts of algorithms, including graph theory, dynamic programming, and divide and conquer.",
+        "url": "https://www.coursera.org/specializations/algorithms"
+    },
+    {
+        "platform": "Udemy",
+        "courseName": "Mastering Data Structures & Algorithms",
+        "area": "Algorithms",
+        "description": "A hands-on course covering the essential data structures and algorithms using JavaScript.",
+        "url": "https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/"
+    },
+    {
+        "platform": "GitHub",
+        "courseName": "The Algorithms",
+        "area": "Algorithms",
+        "description": "A GitHub repository with a collection of algorithms implemented in various programming languages.",
+        "url": "https://github.com/TheAlgorithms"
+    },
+    {
+        "platform": "Coursera",
+        "courseName": "Introduction to Cloud Computing",
+        "area": "Cloud Computing",
+        "description": "Learn the basics of cloud computing, including cloud infrastructure, services, and deployment models.",
+        "url": "https://www.coursera.org/learn/cloud-computing"
+    },
+    {
+        "platform": "Udemy",
+        "courseName": "AWS Certified Solutions Architect",
+        "area": "Cloud Computing",
+        "description": "Prepare for the AWS Solutions Architect certification with hands-on labs and real-world scenarios.",
+        "url": "https://www.udemy.com/course/aws-certified-solutions-architect-associate/"
+    },
+    {
+        "platform": "GitHub",
+        "courseName": "Cloud Computing Resources",
+        "area": "Cloud Computing",
+        "description": "A curated list of cloud computing tutorials, courses, and tools.",
+        "url": "https://github.com/cloud-computing-resources"
+    }
+]
