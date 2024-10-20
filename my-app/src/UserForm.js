@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Form, Button, Row, Col, Container, Alert } from 'react-bootstrap'; // Use Bootstrap for layout and styling
 import { useNavigate } from 'react-router-dom'; // React Router for navigation
+import './SharedStyles.css'; // Import the shared CSS file
 
 const UserForm = () => {
   const [major, setMajor] = useState('');
@@ -108,7 +109,7 @@ const UserForm = () => {
           </Col>
         </Row>
 
-        <Button variant="primary" type="submit" className="mt-4 w-100">
+        <Button variant="primary" type="submit" className="orange-button">
           Get Recommendations
         </Button>
       </Form>

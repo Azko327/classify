@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import './SharedStyles.css';
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const LoginPage = () => {
   return (
     <Container className="d-flex flex-column align-items-center justify-content-center vh-100">
       <h1>Login</h1>
-      <Button variant="primary" onClick={handleLogin}>
+      <Button className="orange-button" variant="primary" onClick={handleLogin}>
         Login
       </Button>
     </Container>

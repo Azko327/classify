@@ -1,0 +1,24 @@
+/* Orange Button Styling */
+.orange-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .orange-button:hover {
+    background-color: darkorange;
+  }
+  
+  .navbar-white {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;  /* Optional border for separation */
+    padding: 0 20px;  /* Add padding to give space on left and right */
+    max-width: 1200px;  /* Set a max-width to keep content centered */
+    margin: 0 auto;  /* Center the navbar content */
+  }

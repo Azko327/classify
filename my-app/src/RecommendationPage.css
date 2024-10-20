@@ -1,0 +1,105 @@
+/* Navbar Styling */
+.navbar-white {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;  /* Optional border for separation */
+  }
+  
+  .navbar-logo {
+    height: 40px;  /* Adjust the size of the logo */
+    margin-right: 10px;
+  }
+  
+  /* Styling for search button */
+  .search-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;  /* Add margin bottom to create spacing */
+  }
+  
+  .search-button:hover {
+    background-color: darkorange;
+  }
+  
+  .course-table-container {
+    max-width: 1000px; /* Increase the width of the course table */
+    margin: 0 auto;    /* Center the table horizontally */
+    padding: 20px;     /* Add padding for spacing around the table */
+  }  
+
+  /* Ensure uniform box sizes in each column */
+  .course-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f3e8fc; /* Light purple background */
+    font-size: 0.875rem; /* Set a smaller font size (14px) */
+  }
+  
+  .course-info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 10px;
+    gap: 20px; /* Add spacing between the columns */
+
+  }
+  
+  .course-number, .course-name, .course-schedule, .difficulty-tag {
+    flex: 1; /* Ensure equal width for all columns */
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-align: center; /* Align text to center */
+  }
+  
+  .course-number, .course-schedule {
+    background-color: white;
+    color: purple;
+    border: 1px solid purple;
+  }
+  
+  .course-name {
+    background-color: #eac6f7;
+    color: purple;
+  }
+  
+  .difficulty-tag {
+    color: white;
+    text-align: center;
+  }
+  
+  .difficulty-tag.hard {
+    background-color: #f26b6b; /* Red for Hard */
+  }
+  
+  .difficulty-tag.medium {
+    background-color: #d4b02b; /* Yellow for Medium */
+  }
+  
+  .difficulty-tag.easy {
+    background-color: #579E43; /* Green for Easy */
+  }
+  
+  .icon-container {
+    cursor: pointer;
+    color: purple;
+  }
+
+  /* Calendar Styling */
+.calendar-container {
+    max-width: 800px;  /* Set a max-width to make the calendar narrower */
+    margin: 0 auto;    /* Center the calendar horizontally */
+    padding: 20px;     /* Add padding to ensure space around the calendar */
+  }
+  
+  /* Event styling in the calendar */
+  .rbc-event {
+    background-color: purple;  /* Purple background for events */
+    color: white;              /* White text for events */
+  }
+  

@@ -2,14 +2,14 @@ import React from 'react';
 import { Navbar, Container, Button } from 'react-bootstrap';
 import UserForm from './UserForm';
 import { useNavigate } from 'react-router-dom';
-
+import './SharedStyles.css';
 import logo from './assets/classify-logo.png';
 
 const UserFormPage = () => {
   return (
     <div>
       {/* Navbar */}
-      <Navbar bg="light" className="px-3">
+      <Navbar bg="light" className="navbar-white">
         <Navbar.Brand href="#">
           {/* Logo */}
           <img
