@@ -1,23 +1,203 @@
 [
-    { "number": "CSE 101", "name": "Intro to Computer Science", "majorRequired": true, "generalRequirement": false, "area": "Software Engineering", "difficulty": 3, "credits": 3 },
-    { "number": "CSE 202", "name": "Data Structures", "majorRequired": true, "generalRequirement": false, "area": "Software Engineering", "difficulty": 4, "credits": 4 },
-    { "number": "CSE 303", "name": "Operating Systems", "majorRequired": true, "generalRequirement": false, "area": "Systems", "difficulty": 5, "credits": 3 },
-    { "number": "CSE 340", "name": "Fundamentals of Machine Learning", "majorRequired": true, "generalRequirement": false, "area": "Machine Learning", "difficulty": 5, "credits": 3 },
-    { "number": "MATH 101", "name": "Calculus I", "majorRequired": false, "generalRequirement": true, "area": "Mathematics", "difficulty": 3, "credits": 4 },
-    { "number": "MATH 102", "name": "Calculus II", "majorRequired": false, "generalRequirement": true, "area": "Mathematics", "difficulty": 4, "credits": 4 },
-    { "number": "PHY 101", "name": "Intro to Physics", "majorRequired": false, "generalRequirement": true, "area": "Natural Sciences", "difficulty": 3, "credits": 3 },
-    { "number": "HUM 101", "name": "Introduction to Philosophy", "majorRequired": false, "generalRequirement": true, "area": "Humanities", "difficulty": 2, "credits": 2 },
-    { "number": "CSE 220", "name": "Algorithms and Complexity", "majorRequired": true, "generalRequirement": false, "area": "Software Engineering", "difficulty": 5, "credits": 3 },
-    { "number": "CSE 230", "name": "Computer Networks", "majorRequired": true, "generalRequirement": false, "area": "Networking", "difficulty": 4, "credits": 3 },
-    { "number": "CSE 250", "name": "Database Systems", "majorRequired": true, "generalRequirement": false, "area": "Database Management", "difficulty": 4, "credits": 3 },
-    { "number": "CSE 260", "name": "Cybersecurity Fundamentals", "majorRequired": true, "generalRequirement": false, "area": "Cybersecurity", "difficulty": 4, "credits": 3 },
-    { "number": "BIO 110", "name": "Introduction to Biology", "majorRequired": false, "generalRequirement": true, "area": "Natural Sciences", "difficulty": 3, "credits": 4 },
-    { "number": "CHEM 101", "name": "General Chemistry", "majorRequired": false, "generalRequirement": true, "area": "Natural Sciences", "difficulty": 4, "credits": 4 },
-    { "number": "CSE 370", "name": "Artificial Intelligence", "majorRequired": true, "generalRequirement": false, "area": "Artificial Intelligence", "difficulty": 5, "credits": 3 },
-    { "number": "CSE 450", "name": "Advanced Machine Learning", "majorRequired": true, "generalRequirement": false, "area": "Machine Learning", "difficulty": 5, "credits": 3 },
-    { "number": "CSE 460", "name": "Blockchain and Distributed Ledger Technologies", "majorRequired": true, "generalRequirement": false, "area": "Blockchain", "difficulty": 5, "credits": 3 },
-    { "number": "ENG 101", "name": "Academic Writing", "majorRequired": false, "generalRequirement": true, "area": "Humanities", "difficulty": 2, "credits": 2 },
-    { "number": "CSE 480", "name": "Advanced Software Engineering", "majorRequired": true, "generalRequirement": false, "area": "Software Engineering", "difficulty": 5, "credits": 3 },
-    { "number": "CSE 490", "name": "Capstone Project in Computer Science", "majorRequired": true, "generalRequirement": false, "area": "Capstone", "difficulty": 5, "credits": 3 }
+    {
+      "number": "CSE 101",
+      "name": "Intro to Computer Science",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Software Engineering",
+      "difficulty": "Medium",
+      "credits": 3,
+      "description": "An introduction to fundamental concepts in computer science, covering programming, algorithms, problem-solving, and the basics of data structures."
+    },
+    {
+      "number": "CSE 202",
+      "name": "Data Structures",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Software Engineering",
+      "difficulty": "Medium",
+      "credits": 4,
+      "description": "This course covers essential data structures such as linked lists, stacks, queues, trees, and graphs, as well as their implementations and applications in various algorithms."
+    },
+    {
+      "number": "CSE 303",
+      "name": "Operating Systems",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Systems",
+      "difficulty": "Hard",
+      "credits": 3,
+      "description": "A comprehensive study of operating systems concepts, including process management, memory management, file systems, and concurrency in modern operating systems."
+    },
+    {
+      "number": "CSE 340",
+      "name": "Fundamentals of Machine Learning",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Machine Learning",
+      "difficulty": "Hard",
+      "credits": 3,
+      "description": "An introductory course to machine learning, covering supervised learning, unsupervised learning, neural networks, and key algorithms for classification and clustering."
+    },
+    {
+      "number": "MATH 101",
+      "name": "Calculus I",
+      "majorRequired": false,
+      "generalRequirement": true,
+      "area": "Mathematics",
+      "difficulty": "Medium",
+      "credits": 4,
+      "description": "An introduction to differential and integral calculus, focusing on limits, continuity, derivatives, integrals, and their applications in real-world problems."
+    },
+    {
+      "number": "MATH 102",
+      "name": "Calculus II",
+      "majorRequired": false,
+      "generalRequirement": true,
+      "area": "Mathematics",
+      "difficulty": "Medium",
+      "credits": 4,
+      "description": "A continuation of Calculus I, covering advanced integration techniques, sequences and series, parametric equations, and polar coordinates."
+    },
+    {
+      "number": "PHY 101",
+      "name": "Intro to Physics",
+      "majorRequired": false,
+      "generalRequirement": true,
+      "area": "Natural Sciences",
+      "difficulty": "Medium",
+      "credits": 3,
+      "description": "This course introduces the fundamentals of physics, covering classical mechanics, thermodynamics, electromagnetism, and optics."
+    },
+    {
+      "number": "HUM 101",
+      "name": "Introduction to Philosophy",
+      "majorRequired": false,
+      "generalRequirement": true,
+      "area": "Humanities",
+      "difficulty": "Easy",
+      "credits": 2,
+      "description": "An overview of major philosophical ideas, thinkers, and debates from ancient to modern times, exploring topics such as ethics, metaphysics, and political philosophy."
+    },
+    {
+      "number": "CSE 220",
+      "name": "Algorithms and Complexity",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Software Engineering",
+      "difficulty": "Hard",
+      "credits": 3,
+      "description": "An in-depth look at algorithm design and analysis, including sorting, searching, dynamic programming, and an introduction to computational complexity theory."
+    },
+    {
+      "number": "CSE 230",
+      "name": "Computer Networks",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Networking",
+      "difficulty": "Medium",
+      "credits": 3,
+      "description": "This course covers the principles and technologies of computer networks, focusing on the Internet protocol suite (TCP/IP), network architecture, and data transmission."
+    },
+    {
+      "number": "CSE 250",
+      "name": "Database Systems",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Database Management",
+      "difficulty": "Medium",
+      "credits": 3,
+      "description": "An introduction to database design, relational databases, SQL, normalization, and indexing, with a focus on building efficient database applications."
+    },
+    {
+      "number": "CSE 260",
+      "name": "Cybersecurity Fundamentals",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Cybersecurity",
+      "difficulty": "Medium",
+      "credits": 3,
+      "description": "A foundational course in cybersecurity, covering topics such as encryption, network security, authentication, and risk management."
+    },
+    {
+      "number": "BIO 110",
+      "name": "Introduction to Biology",
+      "majorRequired": false,
+      "generalRequirement": true,
+      "area": "Natural Sciences",
+      "difficulty": "Medium",
+      "credits": 4,
+      "description": "An overview of biological concepts, including cell biology, genetics, evolution, and ecosystems, with a focus on understanding the diversity of life."
+    },
+    {
+      "number": "CHEM 101",
+      "name": "General Chemistry",
+      "majorRequired": false,
+      "generalRequirement": true,
+      "area": "Natural Sciences",
+      "difficulty": "Medium",
+      "credits": 4,
+      "description": "A comprehensive introduction to chemistry, covering atomic structure, chemical bonding, thermodynamics, and the properties of gases, liquids, and solids."
+    },
+    {
+      "number": "CSE 370",
+      "name": "Artificial Intelligence",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Artificial Intelligence",
+      "difficulty": "Hard",
+      "credits": 3,
+      "description": "This course provides an introduction to artificial intelligence, covering search algorithms, game theory, reasoning, and machine learning basics."
+    },
+    {
+      "number": "CSE 450",
+      "name": "Advanced Machine Learning",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Machine Learning",
+      "difficulty": "Hard",
+      "credits": 3,
+      "description": "An advanced course in machine learning, covering deep learning, reinforcement learning, and neural network architectures for various applications."
+    },
+    {
+      "number": "CSE 460",
+      "name": "Blockchain and Distributed Ledger Technologies",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Blockchain",
+      "difficulty": "Hard",
+      "credits": 3,
+      "description": "An introduction to blockchain technology, covering the principles of distributed ledger systems, consensus mechanisms, smart contracts, and their applications."
+    },
+    {
+      "number": "ENG 101",
+      "name": "Academic Writing",
+      "majorRequired": false,
+      "generalRequirement": true,
+      "area": "Humanities",
+      "difficulty": "Easy",
+      "credits": 2,
+      "description": "This course focuses on developing academic writing skills, including argumentative essays, research papers, and critical reading."
+    },
+    {
+      "number": "CSE 480",
+      "name": "Advanced Software Engineering",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Software Engineering",
+      "difficulty": "Hard",
+      "credits": 3,
+      "description": "An advanced course in software engineering, covering topics such as design patterns, software architecture, testing, and agile methodologies."
+    },
+    {
+      "number": "CSE 490",
+      "name": "Capstone Project in Computer Science",
+      "majorRequired": true,
+      "generalRequirement": false,
+      "area": "Capstone",
+      "difficulty": "Hard",
+      "credits": 3,
+      "description": "A capstone project course where students work in teams to design and implement a large-scale software system, applying principles learned throughout the curriculum."
+    }
   ]
   
