@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Import Axios
+import axios from 'axios';
+import { Form, Button, Row, Col, Container, Alert } from 'react-bootstrap'; // Use Bootstrap for layout and styling
+import { useNavigate } from 'react-router-dom'; // React Router for navigation
 
 const UserForm = () => {
   const [major, setMajor] = useState('');
   const [academicInterests, setAcademicInterests] = useState('');
   const [coursesTaken, setCoursesTaken] = useState('');
-  const [minCredits, setMinCredits] = useState(''); // Allow empty, default validation will apply
-  const [maxCredits, setMaxCredits] = useState(''); // Allow empty, default validation will apply
-  const [recommendations, setRecommendations] = useState(null); // For displaying recommended courses
+  const [minCredits, setMinCredits] = useState(''); // Optional, defaults applied if empty
+  const [maxCredits, setMaxCredits] = useState(''); // Optional, defaults applied if empty
   const [errorMessage, setErrorMessage] = useState(''); // To show any errors
+
+  const navigate = useNavigate(); // Hook to navigate to different routes
 
   // Handle form submission
   const handleSubmit = async (e) => {
@@ -27,7 +30,9 @@ const UserForm = () => {
 
     try {
       const response = await axios.post('https://ysluz2e9rj.execute-api.us-east-1.amazonaws.com/recommendation', userData);
-      setRecommendations(response.data.recommendedCourses); // Update state with recommendations from backend
+
+      // Navigate to the recommendations page and pass the response data
+      navigate('/recommendations', { state: { recommendedCourses: response.data.recommendedCourses } });
     } catch (error) {
       if (error.response && error.response.data) {
         // Display the error message from the backend
@@ -37,89 +42,77 @@ const UserForm = () => {
       }
       console.error('Error fetching course recommendations:', error);
     }
-
-    // Reset the form
-    setMajor('');
-    setAcademicInterests('');
-    setCoursesTaken('');
-    setMinCredits(''); // Reset to empty, defaults applied by backend
-    setMaxCredits(''); // Reset to empty, defaults applied by backend
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Major:</label>
-          <input
+    <Container className="mt-5">
+      <Form onSubmit={handleSubmit} className="p-4" style={{ maxWidth: '600px', margin: '0 auto' }}>
+        {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
+
+        <Form.Group className="mb-3" controlId="formMajor">
+          <Form.Label>Major</Form.Label>
+          <Form.Control
             type="text"
             value={major}
             onChange={(e) => setMajor(e.target.value)}
+            placeholder="e.g., Computer Science"
             required
           />
-        </div>
+        </Form.Group>
 
-        <div>
-          <label>Courses Taken (comma separated):</label>
-          <input
+        <Form.Group className="mb-3" controlId="formCoursesTaken">
+          <Form.Label>Courses Taken (comma separated)</Form.Label>
+          <Form.Control
             type="text"
             value={coursesTaken}
             onChange={(e) => setCoursesTaken(e.target.value)}
+            placeholder="e.g., CSE 202, MATH 023"
             required
           />
-        </div>
+        </Form.Group>
 
-        <div>
-          <label>Career/Academic Interests:</label>
-          <input
+        <Form.Group className="mb-3" controlId="formAcademicInterests">
+          <Form.Label>Career/Academic Interests</Form.Label>
+          <Form.Control
             type="text"
             value={academicInterests}
             onChange={(e) => setAcademicInterests(e.target.value)}
+            placeholder="e.g., Machine Learning, Backend Development"
             required
           />
-        </div>
+        </Form.Group>
 
-        <div>
-          <label>Minimum Credits (optional):</label>
-          <input
-            type="number"
-            value={minCredits}
-            onChange={(e) => setMinCredits(e.target.value)}
-          />
-        </div>
+        <Row>
+          <Col>
+            <Form.Group controlId="formMinCredits">
+              <Form.Label>Minimum Credits (optional)</Form.Label>
+              <Form.Control
+                type="number"
+                value={minCredits}
+                onChange={(e) => setMinCredits(e.target.value)}
+                placeholder="12"
+              />
+            </Form.Group>
+          </Col>
 
-        <div>
-          <label>Maximum Credits (optional):</label>
-          <input
-            type="number"
-            value={maxCredits}
-            onChange={(e) => setMaxCredits(e.target.value)}
-          />
-        </div>
+          <Col>
+            <Form.Group controlId="formMaxCredits">
+              <Form.Label>Maximum Credits (optional)</Form.Label>
+              <Form.Control
+                type="number"
+                value={maxCredits}
+                onChange={(e) => setMaxCredits(e.target.value)}
+                placeholder="18"
+              />
+            </Form.Group>
+          </Col>
+        </Row>
 
-        <button type="submit">Submit</button>
-      </form>
-
-      {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-
-      {recommendations && (
-        <div>
-          <h2>Recommended Courses</h2>
-          <ul>
-            {recommendations.map((course, index) => (
-              <li key={index}>
-                {/* Display course number first, then name, credits, days, and time */}
-                {course.number} - {course.name} ({course.credits} credits) - {course.difficulty}
-                <p>{course.description}</p>
-                <p><strong>Days:</strong> {course.days.join(', ')}</p>
-                <p><strong>Time:</strong> {course.time}</p>
-              </li>
-            ))}
-          </ul>
-          <h3>Total Credits: {recommendations.reduce((sum, course) => sum + course.credits, 0)}</h3>
-        </div>
-      )}
-    </div>
+        <Button variant="primary" type="submit" className="mt-4 w-100">
+          Get Recommendations
+        </Button>
+      </Form>
+    </Container>
   );
 };
 
