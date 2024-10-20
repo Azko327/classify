@@ -2,6 +2,8 @@ import React from 'react';
 import { Navbar, Container, Button } from 'react-bootstrap';
 import UserForm from './UserForm';
 
+import logo from './assets/classify-logo.png';
+
 const UserFormPage = () => {
   return (
     <div>
@@ -10,7 +12,7 @@ const UserFormPage = () => {
         <Navbar.Brand href="#">
           {/* Logo */}
           <img
-            src="logo.png" // Replace with your logo path
+            src={logo}  // Replace with your actual logo file
             width="100"
             className="d-inline-block align-top"
             alt="Logo"
@@ -22,13 +24,11 @@ const UserFormPage = () => {
         </Button>
       </Navbar>
 
-      {/* Container for text and form */}
+      {/* Text Label */}
       <Container className="mt-5">
-        {/* Text Label */}
-        <h2 className="text-center mb-4">
+        <h3 className="text-center mb-4">
           Fill out the form to get your personalized schedule 🌟
-        </h2>
-
+        </h3>
         {/* The Form */}
         <UserForm />
       </Container>
