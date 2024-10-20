@@ -1,0 +1,23 @@
+[
+    { "number": "CSE 101", "name": "Intro to Computer Science", "majorRequired": true, "generalRequirement": false, "area": "Software Engineering", "difficulty": 3, "credits": 3 },
+    { "number": "CSE 202", "name": "Data Structures", "majorRequired": true, "generalRequirement": false, "area": "Software Engineering", "difficulty": 4, "credits": 4 },
+    { "number": "CSE 303", "name": "Operating Systems", "majorRequired": true, "generalRequirement": false, "area": "Systems", "difficulty": 5, "credits": 3 },
+    { "number": "CSE 340", "name": "Fundamentals of Machine Learning", "majorRequired": true, "generalRequirement": false, "area": "Machine Learning", "difficulty": 5, "credits": 3 },
+    { "number": "MATH 101", "name": "Calculus I", "majorRequired": false, "generalRequirement": true, "area": "Mathematics", "difficulty": 3, "credits": 4 },
+    { "number": "MATH 102", "name": "Calculus II", "majorRequired": false, "generalRequirement": true, "area": "Mathematics", "difficulty": 4, "credits": 4 },
+    { "number": "PHY 101", "name": "Intro to Physics", "majorRequired": false, "generalRequirement": true, "area": "Natural Sciences", "difficulty": 3, "credits": 3 },
+    { "number": "HUM 101", "name": "Introduction to Philosophy", "majorRequired": false, "generalRequirement": true, "area": "Humanities", "difficulty": 2, "credits": 2 },
+    { "number": "CSE 220", "name": "Algorithms and Complexity", "majorRequired": true, "generalRequirement": false, "area": "Software Engineering", "difficulty": 5, "credits": 3 },
+    { "number": "CSE 230", "name": "Computer Networks", "majorRequired": true, "generalRequirement": false, "area": "Networking", "difficulty": 4, "credits": 3 },
+    { "number": "CSE 250", "name": "Database Systems", "majorRequired": true, "generalRequirement": false, "area": "Database Management", "difficulty": 4, "credits": 3 },
+    { "number": "CSE 260", "name": "Cybersecurity Fundamentals", "majorRequired": true, "generalRequirement": false, "area": "Cybersecurity", "difficulty": 4, "credits": 3 },
+    { "number": "BIO 110", "name": "Introduction to Biology", "majorRequired": false, "generalRequirement": true, "area": "Natural Sciences", "difficulty": 3, "credits": 4 },
+    { "number": "CHEM 101", "name": "General Chemistry", "majorRequired": false, "generalRequirement": true, "area": "Natural Sciences", "difficulty": 4, "credits": 4 },
+    { "number": "CSE 370", "name": "Artificial Intelligence", "majorRequired": true, "generalRequirement": false, "area": "Artificial Intelligence", "difficulty": 5, "credits": 3 },
+    { "number": "CSE 450", "name": "Advanced Machine Learning", "majorRequired": true, "generalRequirement": false, "area": "Machine Learning", "difficulty": 5, "credits": 3 },
+    { "number": "CSE 460", "name": "Blockchain and Distributed Ledger Technologies", "majorRequired": true, "generalRequirement": false, "area": "Blockchain", "difficulty": 5, "credits": 3 },
+    { "number": "ENG 101", "name": "Academic Writing", "majorRequired": false, "generalRequirement": true, "area": "Humanities", "difficulty": 2, "credits": 2 },
+    { "number": "CSE 480", "name": "Advanced Software Engineering", "majorRequired": true, "generalRequirement": false, "area": "Software Engineering", "difficulty": 5, "credits": 3 },
+    { "number": "CSE 490", "name": "Capstone Project in Computer Science", "majorRequired": true, "generalRequirement": false, "area": "Capstone", "difficulty": 5, "credits": 3 }
+  ]
+  

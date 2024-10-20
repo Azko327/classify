@@ -1,52 +1,36 @@
-// src/UserForm.js
 import React, { useState } from 'react';
+import { db } from './firebaseConfig'; // Import Firestore config
+import { doc, setDoc } from 'firebase/firestore'; // Firestore functions
 
 const UserForm = () => {
-  // State variables to store the input values
   const [major, setMajor] = useState('');
-  const [minor, setMinor] = useState('');
-  const [pastClasses, setPastClasses] = useState('');
   const [academicInterests, setAcademicInterests] = useState('');
+  const [coursesTaken, setCoursesTaken] = useState('');
 
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    // Gather data into a JSON object
+
     const userData = {
-      major: major,
-      minor: minor,
-      pastClasses: pastClasses.split(','),
-      academicInterests: academicInterests.split(',')
+      major,
+      academicInterests: academicInterests.split(',').map(item => item.trim()),
+      pastClasses: coursesTaken.split(',').map(item => item.trim()), // Manually entered courses taken
     };
-  
+
+    // Store the data in Firebase
     try {
-      // Make a POST request to the AWS API Gateway endpoint
-      const response = await fetch('api=key', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(userData),
-      });
-  
-      if (response.ok) {
-        console.log('Data successfully processed');
-      } else {
-        console.error('Error processing data:', response.statusText);
-      }
+      const userId = 'userID123'; // Replace with actual user ID or dynamic value
+      await setDoc(doc(db, 'users', userId), userData);
+      console.log('Data successfully saved to Firebase');
     } catch (error) {
-      console.error('Fetch error:', error);
+      console.error('Error saving data to Firebase:', error);
     }
-  
-    // Reset the form after submission
+
+    // Reset the form
     setMajor('');
-    setMinor('');
-    setPastClasses('');
     setAcademicInterests('');
+    setCoursesTaken('');
   };
-  
-  
 
   return (
     <form onSubmit={handleSubmit}>
@@ -61,20 +45,11 @@ const UserForm = () => {
       </div>
 
       <div>
-        <label>Minor:</label>
+        <label>Courses Taken (comma separated):</label>
         <input
           type="text"
-          value={minor}
-          onChange={(e) => setMinor(e.target.value)}
-        />
-      </div>
-
-      <div>
-        <label>List of Past Classes (comma separated):</label>
-        <input
-          type="text"
-          value={pastClasses}
-          onChange={(e) => setPastClasses(e.target.value)}
+          value={coursesTaken}
+          onChange={(e) => setCoursesTaken(e.target.value)}
           required
         />
       </div>
